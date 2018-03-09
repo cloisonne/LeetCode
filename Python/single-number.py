@@ -8,6 +8,7 @@
 #
 
 import operator
+from functools import reduce
 
 
 class Solution:
@@ -15,8 +16,14 @@ class Solution:
     :type nums: List[int]
     :rtype: int
     """
+    def _xor(self,a,b):
+        return a^b
+
     def singleNumber(self, A):
-        return reduce(operator.xor, A)
+        #return reduce(operator.xor, A)
+        return reduce(self._xor, A)
+
+
 
 if __name__ == '__main__':
-    print Solution().singleNumber([1, 1, 2, 2, 3])
+    print (Solution().singleNumber([1, 1, 2, 2, 3]))

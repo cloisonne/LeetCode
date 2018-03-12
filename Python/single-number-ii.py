@@ -7,6 +7,7 @@
 # Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 import collections
 
+# one 出现一次  two 出现两次  three 出现三次
 
 class Solution(object):
     # @param A, a list of integer
@@ -26,7 +27,7 @@ class Solution2(object):
             two |= one & x
             one ^= x
             carry = one & two
-            one &= ~carry
+            one &= ~carry   # 去掉已经变三次的
             two &= ~carry
         return one
 

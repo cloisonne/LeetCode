@@ -10,7 +10,7 @@
 import operator
 from functools import reduce
 
-
+# 使用异或，a^a = 0  0^b = b
 class Solution:
     """
     :type nums: List[int]

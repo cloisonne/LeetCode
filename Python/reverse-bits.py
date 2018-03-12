@@ -16,7 +16,7 @@ class Solution:
     # @return an integer
     def reverseBits(self, n):
         result = 0
-        for i in xrange(32):
+        for i in range(32):
             result <<= 1
             result |= n & 1
             n >>= 1
@@ -31,4 +31,4 @@ class Solution:
         return int(string, 2)
             
 if __name__ == '__main__':
-  print Solution().reverseBits(1)
+  print (Solution().reverseBits(1))

@@ -28,4 +28,4 @@ class Solution2:
         return n&m >> i << i
 
 if __name__ == '__main__':
-    print Solution().rangeBitwiseAnd(5, 7)
+    print (Solution().rangeBitwiseAnd(5, 7))
